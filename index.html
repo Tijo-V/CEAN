@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEAN - Citizen Environmental Action Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CEAN</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#reports">Reports</a>
+        <a href="#report">Report Issue</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="tag">CITIZEN ENVIRONMENTAL ACTION NETWORK</span>
+
+        <h1>
+            Report Pollution.<br>
+            Protect Your City.
+        </h1>
+
+        <p>
+            One photo, one location, one minute.
+            CEAN helps citizens report environmental
+            problems and bring them to the attention
+            of the right authorities.
+        </p>
+
+        <div class="buttons">
+            <a href="#report" class="btn primary">
+                Report an Issue
+            </a>
+
+            <a href="#track" class="btn secondary">
+                Track a Complaint
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-image"></div>
+
+</section>
+
+<section class="stats">
+
+    <div>
+        <h2>1,248</h2>
+        <p>Total Reports</p>
+    </div>
+
+    <div>
+        <h2>874</h2>
+        <p>Reports Resolved</p>
+    </div>
+
+    <div>
+        <h2>36</h2>
+        <p>Active Hotspots</p>
+    </div>
+
+</section>
+
+<section class="mission" id="mission">
+
+    <h2>Our Mission</h2>
+
+    <p>
+        CEAN gives citizens a simple way to document
+        environmental problems in their communities.
+        Reports can include photographs, locations and
+        descriptions so that environmental issues can
+        be identified and addressed more efficiently.
+    </p>
+
+</section>
+
+<section class="reports" id="reports">
+
+    <h2>What Can You Report?</h2>
+
+    <p>
+        Help identify environmental problems in your community.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🌫️</div>
+            <h3>Air Pollution</h3>
+            <p>
+                Report smoke, open burning, dust clouds,
+                industrial emissions and vehicle pollution.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💧</div>
+            <h3>Water Pollution</h3>
+            <p>
+                Report contaminated water, illegal discharge,
+                polluted rivers and lakes.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🗑️</div>
+            <h3>Solid Waste</h3>
+            <p>
+                Report illegal dumping, overflowing bins,
+                construction waste and littering.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔊</div>
+            <h3>Noise Pollution</h3>
+            <p>
+                Report excessive noise from construction,
+                vehicles, generators and loudspeakers.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="report-section" id="report">
+
+    <h2>Report an Environmental Issue</h2>
+
+    <form id="reportForm">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="type">Issue Type</label>
+
+        <select id="type" required>
+            <option value="">Select an issue</option>
+            <option>Air Pollution</option>
+            <option>Water Pollution</option>
+            <option>Solid Waste</option>
+            <option>Noise Pollution</option>
+        </select>
+
+        <label for="location">Location</label>
+
+        <input
+            type="text"
+            id="location"
+            placeholder="Enter location"
+            required
+        >
+
+        <label for="description">Description</label>
+
+        <textarea
+            id="description"
+            rows="5"
+            placeholder="Describe the environmental issue"
+            required
+        ></textarea>
+
+        <label for="photo">Upload Photo</label>
+
+        <input type="file" id="photo" accept="image/*">
+
+        <button type="submit" class="btn primary">
+            Submit Report
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+</section>
+
+<section class="track" id="track">
+
+    <h2>Track Your Complaint</h2>
+
+    <p>
+        Enter your complaint ID to check its current status.
+    </p>
+
+    <div class="track-box">
+
+        <input
+            type="text"
+            id="complaintId"
+            placeholder="Enter complaint ID"
+        >
+
+        <button onclick="trackComplaint()">
+            Track
+        </button>
+
+    </div>
+
+    <p id="trackingResult"></p>
+
+</section>
+
+<section class="cta">
+
+    <h2>Seen Something Today?</h2>
+
+    <p>
+        Help make your community cleaner and safer.
+    </p>
+
+    <a href="#report" class="btn primary">
+        Report an Issue
+    </a>
+
+</section>
+
+<footer>
+
+    <p>
+        CEAN — Citizen Environmental Action Network
+    </p>
+
+    <p>
+        Student Environmental Sustainability Project
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
